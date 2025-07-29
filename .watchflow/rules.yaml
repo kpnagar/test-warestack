@@ -1,0 +1,9 @@
+rules:
+  - id: no-deploy-days
+    name: No Deployments on working day
+    description: Prevent deployments on given working days
+    enabled: true
+    severity: medium
+    event_types: [deployment]
+    parameters:
+      restricted_days: [Tuesday]
